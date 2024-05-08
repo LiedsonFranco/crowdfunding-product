@@ -6,28 +6,69 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Crowdfunding product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Crowdfunding product page</title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/output.css">
+ 
 </head>
-<body>
-  About
-  Discover
-  Get Started
+<body class="box-content">
+  <nav class="flex justify-between px-4 py-8">
+    <img src="images/logo.svg" alt="">
+    <ul class="hidden">
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Discover</a>
+      </li>
+      <li>
+        <a href="#">Get Started</a>
+      </li>
+    </ul>
+    <button>
+      <img src="images/icon-hamburger.svg" alt="">
+    </button>
+  </nav>
+  
+<main class="w-[90%]  mt-[180px] mx-auto *:p-5">
+<header class="text-center bg-white rounded-lg mb-8 relative">
+  <img src="images/logo-mastercraft.svg" alt="logo-mastercraft" class="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
+  <h1 class="text-center font-bold text-xl mt-10 mb-4">
+    Mastercraft Bamboo Monitor Riser
+  </h1>
+  <p>
+    A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+  </p>
+  <div class="flex items-center justify-center gap-x-2 my-6">
+    <button class="py-4 px-12 bg-Moderate-cyan rounded-full text-white font-bold">
+      Back this project
+    </button>
+    <button class="rounded-ful">
+      <img src="images/icon-bookmark.svg" alt="Bookmark">
+    </button>
+  </div>
+</header>
 
-  Mastercraft Bamboo Monitor Riser
-  A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+<div class="bg-white rounded-lg mb-8 ">
+  <section>
+    <h2 class="text-4xl font-black">$89,914</h2>
+    <p>of $100,000 backed</p>
+    <hr>
+  </section>
+  <section>
+    <h2>5,007</h2>
+    <p>total backers</p>
+    <hr>
+  </section>
+  <section>
+    <h2>56</h2>
+    <p>days left</p>
+  </section>
+</div>
 
-  Back this project
-  Bookmark
-
-  $89,914 of $100,000 backed
-  5,007 total backers
-  56 days left
 
   About this project
 
