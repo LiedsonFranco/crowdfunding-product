@@ -140,7 +140,7 @@
   </div>
   
   <!-- Selection modal start -->
-  <form class="absolute bg-white m-auto top-[80px] left-[50%] translate-x-[-50%] w-[90%] shadow-2xl p-6 rounded-lg" style="box-shadow: 0 0 10px 100vh rgba(0, 0, 0, 0.504);">
+  <form class="absolute bg-white m-auto  top-32 left-[50%] translate-x-[-50%] w-[95%] p-6 rounded-lg modal ">
 
     <h2 class="font-bold text-xl">
       Back this project
@@ -150,7 +150,7 @@
     </p>
     
     <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg *:[.p_tag]:bg-red-100">
-      <input type="radio" name="pledge" id="pledge_no_reward" value="no_reward" class="mr-4">
+      <input type="radio" name="pledge" id="pledge_no_reward" value="no_reward" class="mr-4 w-full">
       <label for="pledge_no_reward" class="text-md font-bold">
         Pledge with no reward
       </label>
@@ -162,9 +162,8 @@
   
     <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg *:[#p_tag]:bg-red-100">
       <div>
-
         <input type="radio" name="pledge_bamboo" class="mr-4">
-        <label for="" class="text-md font-bold">
+        <label for="pledge_bamboo" class="text-md font-bold">
         Bamboo Stand
         <br>
         <span class="text-Moderate-cyan">
@@ -195,35 +194,56 @@
         </div>
       </div>
 
-  </fieldset>
-  
-  Black Edition Stand
-  Pledge $75 or more
-  You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-  member list. Shipping is included.
-  64 left
-  
-  <!-- Selected pledge start -->
-  Enter your pledge
-  $75
-  Continue
-  <!-- Selected pledge end -->
-  
-  Mahogany Special Edition
-  Pledge $200 or more
-  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-  to our Backer member list. Shipping is included.
+    </fieldset>
+    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg *:[#p_tag]:bg-red-100">
+      <div>
+        <input type="radio" name="black_edition_stanf" id="black_edition_stanf" class="mr-4">
+        <label for="black_edition_stanf" class="text-md font-bold">
+          Black Edition Stand
+          <br>
+          <span class="text-Moderate-cyan">
+            Pledge $75 or more
+          </span>
+        </label>
       </div>
-  0 left
+      <p class="my-4">
+        You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+        member list. Shipping is included.
+      </p>
+      <p class="my-4">
+        <span class="text-xl text-black font-black">64</span> <sup class="ml-2 text-lg">left</sup>
+      </p>
+      <div class="hidden">
+        Enter your pledge
+        $75
+        Continue
+      </div>
+    </fieldset>
+    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg opacity-40 *:[#p_tag]:bg-red-100">
+      <div>
+        <input type="radio" name="black_edition_stanf" id="black_edition_stanf" class="mr-4">
+        <label for="black_edition_stanf" class="text-md font-bold">
+          Mahogany Special Edition
+          <br>
+          <span class="text-Moderate-cyan">
+            Pledge $200 or more
+          </span>
+        </label>
+      </div>
+      <p class="my-4">
+        You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
+      </p>
+      <p class="my-4">
+        <span class="text-xl text-black font-black">0</span> <sup class="ml-2 text-lg">left</sup>
+      </p>
+      <div>
+        Enter your pledge
+        $200
+        Continue
+      </div>
+    </fieldset>
   
-  <!-- Selected pledge  start -->
-  Enter your pledge
-  $200
-  Continue
 </div>
-  <!-- Selected pledge end -->
-  
-  <!-- Selection modal end -->
   
 </div>
 <div class="hidden">  
