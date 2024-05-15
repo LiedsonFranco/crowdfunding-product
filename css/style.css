@@ -5,7 +5,14 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: "Commissioner", sans-serif;
+    box-sizing: border-box;
 }
 .modal{
     box-shadow: 0 0 10px 1000vh rgba(0, 0, 0, 0.504)
+}
+input[type='radio']{
+    border: none;
+    
+    outline: none;
+    transform: scale(1.5);
 }

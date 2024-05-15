@@ -75,12 +75,14 @@
 <div class="bg-white rounded-lg *:my-4">
 <h2 class="font-bold text-xl">About this project</h2>
   <p>
-  The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
-  to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
-  your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+    The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+    to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+    your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+  </p>
   <p>
-  Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
-  to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+    Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+    to allow notepads, pens, and USB sticks to be stored under the stand.
+  </p>
   
   <div class="p-6 border border-zinc-200 rounded-lg">
     <h3 class="font-bold">
@@ -141,7 +143,6 @@
   
   <!-- Selection modal start -->
   <form class="absolute bg-white m-auto  top-32 left-[50%] translate-x-[-50%] w-[95%] p-6 rounded-lg modal ">
-
     <h2 class="font-bold text-xl">
       Back this project
     </h2>
@@ -149,27 +150,31 @@
       Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
     </p>
     
-    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg *:[.p_tag]:bg-red-100">
-      <input type="radio" name="pledge" id="pledge_no_reward" value="no_reward" class="mr-4 w-full">
-      <label for="pledge_no_reward" class="text-md font-bold">
-        Pledge with no reward
-      </label>
+    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg has-[:checked]:border-Moderate-cyan has-[:checked]:border-4 *:[.p_tag]:bg-red-100 transition-all ease-linear duration-300">
+      <div class="flex items-center">
+        <input type="radio" name="donation" id="pledge_no_reward"   value="no_reward"class="mr-4 checked:accent-Moderate-cyan checked:border-none focus:ring-0 ring-0">
+        <label for="pledge_bamboo" id="pledge_no_reward"  class="text-md font-bold">
+          Pledge with no reward
+          <br>
+        </label>
+      </div>
       <p class="my-4" id="p_tag">
         Choose to support us without a reward if you simply believe in our project. As a backer, 
         you will be signed up to receive product updates via email.
       </p>
     </fieldset>
   
-    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg *:[#p_tag]:bg-red-100">
-      <div>
-        <input type="radio" name="pledge_bamboo" class="mr-4">
+    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg has-[:checked]:border-Moderate-cyan has-[:checked]:border-4 *:[.p_tag]:bg-red-100 transition-all ease-linear duration-300">
+      <div class="flex items-center">
+        <input type="radio" name="donation" class="mr-4 checked:accent-Moderate-cyan group-focus:">
         <label for="pledge_bamboo" class="text-md font-bold">
         Bamboo Stand
         <br>
         <span class="text-Moderate-cyan">
           Pledge $25 or more
         </span>
-      </label>
+        </label>
+      </div>
       <p class="my-4">
         You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
         you’ll be added to a special Backer member list.
@@ -178,15 +183,15 @@
         <span class="text-xl text-black font-black">101</span> <sup class="ml-2 text-lg">left</sup>
       </p>
     
-      <div class="border-t w-full border-gray-200">
+      <div class="border-t w-full border-gray-200  hidden">
         <p class="text-center my-4 mt-6">
           Enter your pledge
         </p>
 
-        <div class="grid grid-cols-2 gap-x-4">
+        <div class="grid grid-cols-2 gap-x-4 ">
           <div class="flex p-2 px-4 border-gray-200 border rounded-full">
             <span class="mx-3">$</span>
-            <input type="text" value="25">
+            <input type="text" value="25" class="focus:border-none focus:outline-none border-none outline-none">
           </div>
           <button class="bg-Moderate-cyan p-2 px-4 rounded-full text-white">
             Continue
@@ -195,9 +200,10 @@
       </div>
 
     </fieldset>
-    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg *:[#p_tag]:bg-red-100">
+
+    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg has-[:checked]:border-Moderate-cyan has-[:checked]:border-4 *:[.p_tag]:bg-red-100 transition-all ease-linear duration-300">
       <div>
-        <input type="radio" name="black_edition_stanf" id="black_edition_stanf" class="mr-4">
+        <input type="radio" name="donation" id="black_edition_stanf" class="mr-4 checked:accent-Moderate-cyan checked:border-none">
         <label for="black_edition_stanf" class="text-md font-bold">
           Black Edition Stand
           <br>
@@ -219,9 +225,10 @@
         Continue
       </div>
     </fieldset>
-    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg opacity-40 *:[#p_tag]:bg-red-100">
+
+    <fieldset class="p-6 my-3 border border-zinc-200 rounded-lg has-[:checked]:border-Moderate-cyan has-[:checked]:border-4 *:[.p_tag]:bg-red-100 transition-all ease-linear duration-300">
       <div>
-        <input type="radio" name="black_edition_stanf" id="black_edition_stanf" class="mr-4">
+        <input type="radio" name="donation" id="black_edition_stanf" class="mr-4 checked:accent-Moderate-cyan checked:border-none">
         <label for="black_edition_stanf" class="text-md font-bold">
           Mahogany Special Edition
           <br>
