@@ -16,3 +16,8 @@ input[type='radio']{
     outline: none;
     transform: scale(1.5);
 }
+@media (min-width: 760px) {
+    body{
+        background-image: url(../images/image-hero-desktop.jpg);
+    }
+}
