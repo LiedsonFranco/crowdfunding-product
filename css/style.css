@@ -8,7 +8,7 @@ body{
     box-sizing: border-box;
 }
 .modal{
-    box-shadow: 0 0 10px 1000vh rgba(0, 0, 0, 0.504)
+    box-shadow: 0 0 10px 300vh rgba(0, 0, 0, 0.504)
 }
 input[type='radio']{
     border: none;
@@ -17,7 +17,7 @@ input[type='radio']{
     transform: scale(1.5);
 }
 .cover_shadow{
-    box-shadow: 0 0 10px 1000vh rgba(0, 0, 0, 0.504)
+    box-shadow: 0 0 10px 300vh rgba(0, 0, 0, 0.504)
 }
 @media (min-width: 760px) {
     body{
