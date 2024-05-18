@@ -1,6 +1,5 @@
 body{
     background-image: url(../images/image-hero-mobile.jpg);
-    background-color: hsl(0, 0%, 92%);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: 100%;
