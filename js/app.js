@@ -1,6 +1,7 @@
 let inputs = document.querySelectorAll('.input_radio')
 let last_hidden_section 
 let total_backed = 89.914
+let total_backed_tag = document.getElementById('total_backed')
 
 inputs.forEach(element => {
     element.addEventListener('change', () => {
@@ -12,12 +13,16 @@ inputs.forEach(element => {
     })
 });
 
-function close_modal(){
-    document.querySelectorAll('.modal').forEach(element => {
-        element.classList.add('hidden')
-    })
+function close_modal(id,button){
+    document.getElementById(id).classList.add('hidden')
+    if(id == 'form_modal'){
+        total_backed +=  parseFloat(document.getElementById(button.dataset.get).value)
+        total_backed_tag.innerText = total_backed
+    }
 }
-
 function show_modal(id){
     document.getElementById(id).classList.remove('hidden')
+}
+function add_to_backed(){
+    
 }

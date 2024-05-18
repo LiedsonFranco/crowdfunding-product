@@ -42,33 +42,40 @@
   <p>
     A beautiful & handcrafted monitor stand to reduce neck and eye strain.
   </p>
-  <div class="flex items-center justify-center gap-x-2 my-6">
-    <button class="py-4 px-12 bg-Moderate-cyan rounded-full text-white font-bold" onclick="show_modal('form_modal')">
+  <div class="flex items-center md:justify-between justify-center gap-x-2 my-6">
+    <button class="py-4 px-12 bg-Moderate-cyan hover:bg-Dark-cyan rounded-full text-white font-bold" onclick="show_modal('form_modal')">
       Back this project
     </button>
-    <button class="rounded-ful">
-      <img src="images/icon-bookmark.svg" alt="Bookmark">
-    </button>
+    <div class="flex items-center gap-x-4 rounded-full md:bg-zinc-200 group">
+      <button class="rounded-full">
+        <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+          <g  class="fill-red-200">
+            <circle class="group-hover:fill-Dark-cyan" fill="#2F2F2F" cx="28" cy="28" r="28"/><path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
+      </button>
+      <span class="pr-6 hidden md:block text-Dark-gray group-hover:text-Dark-cyan font-bold">Bookmark</span>
+    </div>
   </div>
 </header>
 
 <div class="bg-white rounded-lg mb-8 text-center">
-  <section class="my-4">
-    <h2 class="text-3xl font-bold">$89,914</h2>
-    <p class="my-2">of $100,000 backed</p>
-    <hr class="w-[40%] mx-auto mt-6">
-  </section>
-  <section class="my-4">
-    <h2 class="text-3xl font-bold">5,007</h2>
-    <p class="my-2">total backers</p>
-    <hr class="w-[40%] mx-auto mt-6">
-  </section>
-  <section class="my-4">
-    <h2 class="text-3xl font-bold">56</h2>
-    <p class="my-2">days left</p>
-  </section>
+  <div class="grid md:grid-cols-3 ">
+    <section class="my-4">
+      <h2 class="text-3xl font-bold">$ <span id="total_backed">89,914</span></h2>
+      <p class="my-2">of $100,000 backed</p>
+      <hr class="w-[40%] mx-auto mt-6">
+    </section>
+    <section class="my-4">
+      <h2 class="text-3xl font-bold">5,007</h2>
+      <p class="my-2">total backers</p>
+      <hr class="w-[40%] mx-auto mt-6">
+    </section>
+    <section class="my-4">
+      <h2 class="text-3xl font-bold">56</h2>
+      <p class="my-2">days left</p>
+    </section>
+  </div>
   <div class="w-full h-3 rounded-full bg-neutral-200 my-4">
-    <div id="progress-bar" class="w-[75%] h-3 rounded-full bg-Moderate-cyan"></div>
+    <div id="progress-bar" class="w-[5%] h-3 rounded-full bg-Moderate-cyan"></div>
   </div>
 </div>
 
@@ -95,12 +102,14 @@
       You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
       you’ll be added to a special Backer member list.
     </p>
-    <p class="text-black">
-      <span class="font-bold text-3xl">101</span><sup class="mx-2 text-Dark-gray text-md">left</sup>
-    </p>
-    <button class="mt-5 p-2 px-4 bg-Moderate-cyan rounded-full text-white">
-      Select Reward
-    </button>
+    <div class="flex items-center justify-between">
+      <p class="text-black">
+        <span class="font-bold text-3xl">101</span><sup class="mx-2 text-Dark-gray text-md">left</sup>
+      </p>
+      <button class="mt-5 p-2 px-4 hover:bg-Dark-cyan bg-Moderate-cyan rounded-full text-white" onclick="show_modal('form_modal')">
+        Select Reward
+      </button>
+    </div>
   </div>
 
   <div class="p-6 border border-zinc-200 rounded-lg">
@@ -114,12 +123,14 @@
       You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
       member list. Shipping is included.
     </p>
-    <p class="text-black">
-      <span class="font-bold text-3xl">64</span> <sup class="mx-2 text-Dark-gray text-md">left</sup>
-    </p>
-    <button class="mt-5 p-2 px-4 bg-Moderate-cyan rounded-full text-white">
-      Select Reward
-    </button>
+    <div class="flex justify-between items-center">
+      <p class="text-black">
+        <span class="font-bold text-3xl">64</span> <sup class="mx-2 text-Dark-gray text-md">left</sup>
+      </p>
+      <button class="mt-5 p-2 px-4 hover:bg-Dark-cyan bg-Moderate-cyan rounded-full text-white" onclick="show_modal('form_modal')">
+        Select Reward
+      </button>
+    </div>
   </div>
 
   <div class="p-6 border border-zinc-200 rounded-lg opacity-40">
@@ -133,15 +144,17 @@
       You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
       to our Backer member list. Shipping is included.
     </p>
-    <p>
-      <span class="font-bold text-3xl">0</span><sup>left</sup>
-    </p>
-     <button class="mt-5 p-2 px-4 bg-Dark-gray rounded-full text-white">
-       Out of Stock
-     </button>
+    <div class="flex justify-between items-center">
+      <p>
+        <span class="font-bold text-3xl">0</span><sup>left</sup>
+      </p>
+       <button class="mt-5 p-2 px-4 bg-Dark-gray rounded-full text-white">
+         Out of Stock
+       </button>
+    </div>
   </div>
   
-  <form class="absolute bg-white m-auto  top-32 left-[50%] translate-x-[-50%] w-[85%] p-6 rounded-lg modal hidden" id="form_modal">
+  <form class="absolute bg-white m-auto  top-32 left-[50%] translate-x-[-50%] w-[85%] md:w-[60%] p-6 rounded-lg modal hidden" id="form_modal">
     <div class="flex justify-between">
       <h2 class="font-bold text-xl">
         Back this project
@@ -156,7 +169,7 @@
     
     <fieldset class="p-7 my-4 border border-zinc-200 rounded-lg has-[:checked]:border-Moderate-cyan has-[:checked]:border-4 *:[.p_tag]:bg-red-100 transition-all ease-linear duration-300">
       <div class="flex items-center">
-        <input type="radio" name="donation" id="pledge_no_reward"   value="no_reward"class="mr-4 checked:accent-Moderate-cyan checked:border-none focus:ring-0 ring-0 input_radio" data-target="form_h_0">
+        <input type="radio" name="donation" id="pledge_no_reward"   value="no_reward"class="mr-4 checked:accent-Moderate-cyan checked:border-none focus:ring-0 ring-0 input_radio" data-target="form_h_0" onclick="close_modal()">
         <label for="pledge_bamboo" id="pledge_no_reward"  class="text-md font-bold">
           Pledge with no reward
           <br>
@@ -189,7 +202,7 @@
         </p>
       </div>
     
-      <div class="border-t w-full border-gray-200 p-6 hidden" id="form_h_1" data-hide="true">
+      <div class="border-t w-full border-gray-200 p-6 hidden grid md:grid-cols-2 md:justify-between justify-center" id="form_h_1" data-hide="true">
         <p class="text-center my-4 ">
           Enter your pledge
         </p>
@@ -197,9 +210,9 @@
         <div class="grid grid-cols-2 gap-x-4 mx-auto max-w-72">
           <div class="flex p-2 py-3 border-gray-200 border rounded-full items-center">
             <span class="mx-3">$</span>
-            <input type="text" value="25" class="focus:border-none focus:outline-none border-none outline-none">
+            <input type="number" value="25" class="focus:border-none focus:outline-none border-none outline-none" id="donation_input_1">
           </div>
-          <button class="bg-Moderate-cyan p-2 py-3 rounded-full text-white text-center" onclick="close_modal(); show_modal('completed_modal')" type="button">
+          <button class="bg-Moderate-cyan p-2 py-3 rounded-full text-white text-center" onclick="close_modal('form_modal',this); show_modal('completed_modal')" type="button" data-get="donation_input_1">
             Continue
           </button>
         </div>
@@ -226,7 +239,7 @@
         </p>
       </div>
       
-      <div class="border-t w-full border-gray-200 p-6 hidden" id="form_h_2" data-hide="true">
+      <div class="border-t w-full border-gray-200 p-6 hidden grid md:grid-cols-2 md:justify-between justify-center" id="form_h_2" data-hide="true">
         <p class="text-center my-4 ">
           Enter your pledge
         </p>
@@ -266,7 +279,7 @@
   
 </div>
 
-<div class="absolute bg-white m-auto  top-36 left-[50%] translate-x-[-50%] w-[85%] p-6 rounded-lg modal flex flex-col items-center justify-center hidden" id="completed_modal">  
+<div class="fixed bg-white m-auto  top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[85%] p-6 rounded-lg modal flex flex-col items-center justify-center hidden" id="completed_modal">  
   <img src="images/icon-check.svg" alt="">
   <h1 class="font-bold text-center my-4">
     Thanks for your support!
@@ -275,7 +288,7 @@
     Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
     an email once our campaign is completed.
   </p>
-  <button type="button" class="bg-Moderate-cyan text-white rounded-full px-5 py-2" onclick="close_modal()">
+  <button type="button" class="bg-Moderate-cyan text-white rounded-full px-5 py-2" onclick="close_modal('completed_modal')">
     Got it!
   </button>
 </div>
