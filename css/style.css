@@ -16,6 +16,9 @@ input[type='radio']{
     outline: none;
     transform: scale(1.5);
 }
+.cover_shadow{
+    box-shadow: 0 0 10px 1000vh rgba(0, 0, 0, 0.504)
+}
 @media (min-width: 760px) {
     body{
         background-image: url(../images/image-hero-desktop.jpg);
