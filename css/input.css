@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 p{
-    @apply text-Dark-gray
+    @apply text-Dark-gray my-4
 }
