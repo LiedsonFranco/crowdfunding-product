@@ -7,7 +7,7 @@ let inputs = document.querySelectorAll('.input_radio')
 let porcente_tag = document.getElementById('progress-bar')
 let total_backed_tag = document.getElementById('total_backed')
 let total_backers_tag = document.getElementById('total_backers')
-let projects = {'Bamboo Stand': [101, document.querySelectorAll('#bamboo_stand')],'Black Edition Stand':[64, document.querySelectorAll('#black_edition_stand')]}
+let projects = {'Bamboo Stand': [101, document.querySelectorAll('.bamboo_stand')],'Black Edition Stand':[64, document.querySelectorAll('.black_edition_stand')]}
 let last_hidden_section 
 
 inputs.forEach(element => {
